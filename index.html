@@ -4,35 +4,36 @@
   <meta charset="UTF-8">
   <title>Resume - Matee Sukaima</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; line-height: 1.6; }
-    h1 { color: #2c3e50; }
-    h2 { color: #34495e; }
-    .section { margin-top: 20px; }
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    h1 {
+      text-align: center;
+      padding: 10px;
+      background: #2c3e50;
+      color: white;
+      margin: 0;
+    }
+    .pdf-viewer {
+      flex: 1;
+    }
+    embed, iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
   </style>
 </head>
 <body>
-  <h1>ประวัติย่อ (Resume)</h1>
-  <p><b>ชื่อ:</b> Matee Sukaima</p>
-  <p><b>Email:</b> your.email@example.com</p>
-
-  <div class="section">
-    <h2>การศึกษา</h2>
-    <p>มหาวิทยาลัย XYZ - วิศวกรรมคอมพิวเตอร์ (2018 - 2022)</p>
-  </div>
-
-  <div class="section">
-    <h2>ประสบการณ์ทำงาน</h2>
-    <ul>
-      <li>Software Developer ที่ ABC Company (2023 - ปัจจุบัน)</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2>ทักษะ</h2>
-    <ul>
-      <li>Python, JavaScript, HTML, CSS</li>
-      <li>Git, GitHub, SQL</li>
-    </ul>
+  <h1>Resume - Matee Sukaima</h1>
+  <div class="pdf-viewer">
+    <embed src="Science and Engineering Resume in White Black Simple Style.pdf" type="application/pdf">
   </div>
 </body>
 </html>
+
+
